@@ -7,7 +7,11 @@ public class Main {
         try( Scanner scanner = new Scanner(System.in)){
             int input = scanner.nextInt();
             if(input < 18){
-                System.out.println("Hello teenager");
+                if(input < 10){
+                   System.out.println("Hello kid"); 
+                } else {
+                    System.out.println("Hello teenager");
+                }
             } else if(input == 18){
                 System.out.println("Hello new adult");
             } else if(input > 18){
